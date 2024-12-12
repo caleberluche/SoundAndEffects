@@ -216,6 +216,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &488191493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2089571157638168133, guid: f229ed963bc298d4398c84d3f50c1b2d, type: 3}
+  m_PrefabInstance: {fileID: 2898381306426246652}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710426052}
+  - component: {fileID: 710426053}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -329,6 +335,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &710426053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710426051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f6c607afe232e42859d3ab16fbe5a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaclePrefab: {fileID: 488191493}
 --- !u!1 &835818919
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +359,7 @@ GameObject:
   - component: {fileID: 835818921}
   - component: {fileID: 835818920}
   - component: {fileID: 835818922}
+  - component: {fileID: 835818923}
   m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
@@ -424,6 +444,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132a88ed52865f64c87ae83f1cd2bf30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &835818923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835818919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 112.79999, y: 18.781641, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1851184772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -515,8 +548,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10.036684, y: 0.39418882, z: 9.998011}
+  m_Center: {x: -0.005257416, y: -0.19709441, z: 0.0009946823}
 --- !u!23 &2014335013
 MeshRenderer:
   m_ObjectHideFlags: 0
